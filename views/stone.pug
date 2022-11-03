@@ -13,3 +13,8 @@ block content
             each item, index in results
 
                 div.col-sm-2(onclick=`buy(${index})`) stone Name: #{item["stone_Name"]} <br> stone Company: #{item["stone_Company"]} <br> stone size: #{item["stone_size"]} <br> stone Rating: #{item["stone_Rating"]}
+                
+        script.
+            function buy(index) {
+             alert("You purchased item " + index)
+                }
